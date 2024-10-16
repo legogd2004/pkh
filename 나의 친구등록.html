@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link type = "text/css" rel="stylesheet" href="background.css">
+    <title>친구 </title>
+    
+</head>
+<body>
+    <form id="payment" action="congrats.html" method="get">
+        <!-- 나의 색깔 -->
+        <fieldset>
+            <legend>나의 색깔</legend>
+            <input type="color" value="#00BFFF" onchange="document.body.style.color=this.value">
+        </fieldset>
+
+        <!-- 신상정보 -->
+        <fieldset>
+            <legend>신상정보</legend>
+            <ol>
+                <li>이 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 름 : <input type="text" size="15" placeholder="이름" required> <br> </li>
+                <li>이&nbsp&nbsp&nbsp메&nbsp&nbsp&nbsp일 : <input type="email" required size="15" placeholder="example@email.com"> <br> </li>
+                <li>휴대폰 번호: <input type="tel" size="15" placeholder="010-1234-5678" required> <br> </li>
+                <li>검색어 : <input type="search" placeholder="검색어">
+                <input type="button" value="검색"></li>
+
+            </ol>
+        </fieldset>
+        
+        <fieldset>
+            <legend>신상정보 추가</legend>
+            <ol>
+                <li>직업 : <input type="text" list="job" placeholder="하나 선택"required><br>
+                    <datalist id="job" >
+                        <option value="학생"></option>
+                        <option value="직장인"></option>
+                        <option value="무직"></option>
+                    </datalist></li>
+                <li>성 별: <input type="radio" name="gender" value="남자"> 남자 
+                    <input type="radio" name="gender" value="여자"> 여자 
+                    <input type="radio" name="gender" value="정의하지 않음"> 비공개 <br> 
+                </li>
+                <li>취미 : 
+                    <input type="checkbox" value="독서"> 독서 
+                    <input type="checkbox" value="게임"> 게임 
+                    <input type="checkbox" value="영화감상"> 영화감상 
+                    <input type="checkbox" value="음악감상"> 음악감상 
+                    <input type="checkbox" value="축구"> 축구<br> 
+                </li>
+                <li>생년월일 <br>
+                    <table>
+                        <tr>
+                            <td>생일 월</td>
+                            <td><input type="month" placeholder="2004-09-13"></td>
+                        </tr>
+                        <tr>
+                            <td>생일 일</td>
+                            <td><input type="date" value="2004-09-13"></td>
+                        </tr>
+                        <tr>
+                            <td>생일 시간</td>
+                            <td><input type="time"></td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+        </fieldset>
+        
+        <br>
+        자기소개글
+        <br>
+        <textarea cols="80" rows="20" placeholder="이곳에 자기소개서 작성"></textarea>
+        
+        <br><br>
+        <input type="reset" value="취소하기" >
+        <input type="submit" value="등록하기">
+        <button type="button">
+            <img src="C:\pkh\chrome.png" alt="이미지 버튼" style="width: 40px; height: 40px;">
+        </button>
+    </form>
+
+    <br>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type = "text/css" rel="stylesheet" href="background.css">
+	
+	<title>details와 summary 태그</title>
+</head>
+<body>
+	<h3>details와 summary태그</h3>
+	Q &amp; A 리스트
+	<hr>
+
+	<details>
+		<summary>Question 1</summary>
+		<p>웹 개발자가 알아야 하는 언어 3가지?</p>
+	</details>
+	<details>
+		<summary>Answer 1</summary>
+		<p>HTML5, CSS, JAVASCRIPT</p>
+	</details>
+<h3>인라인 시맨틱 태그 사례</h3>
+<hr>
+<p>내일은 <mark>HTML5 시험</mark><br>
+	시간은 <time>09:00</time><br>
+	난이도<meter value="0.8" max="1.0">80%</meter><br>
+	자료업로딩(20%)
+	<progress value="2" max="10"></progress><br>
+</p>
+<hr>
+<form>
+	이름: <input type="text" value=""><br>
+	암호: <input type="password" value="" maxlength="4"><br>
+	자소서: <textarea cols="20" rows="10">
+이곳에 자기소개서 작성
+	</textarea>
+</form>
+<h3>가보고 싶은 나라</h3>
+<hr>
+<form>
+나라 : <input type="text" list="countries"><br>
+			<datalist id="countries">
+				<option value="가나">
+				<option value="스위스">
+				<option value="브라질">
+			</datalist>
+보고싶은것 : <input type="text" list="what"><br>
+		<datalist id="what">
+	<option value="산">
+	<option value="바다">
+	<option value="도시">
+</datalist>
+</form>
+<h3>먹고 싶은 것 모두 체크하세요</h3>
+<hr>
+<form>
+	짜장면 <input type="checkbox" value="1">
+	짬뽕 <input type="checkbox" value="2" checked>
+	탕수육 <input type="checkbox" value="3">
+</form>
+
+<h3>먹고 싶은 것 하나만 선택?</h3>
+<hr>
+<form>
+	<input type="radio" name="china" value="1">
+			짜장면<img src="C:\pkh\jajang.png"><br>
+	<input type="radio" name="china" value="2" checked>
+			짬뽕<img src="C:\pkh\jjambbong.png"><br>
+	<input type="radio" name="china" value="3">
+			탕수육<img src="C:\pkh\tangsuyuk.png">
+</form>
+
+<h3>먹고 싶은 음식은?</h3>
+<hr>
+<form>
+	<select name="china">
+		<option value="1">짜장면</option>
+		<option value="2" selected>짬뽕</option>
+		<option value="3">탕수육</option>
+	</select>
+</form>
+<h3>먹고 싶은 것 하나만 선택?(&lt;label&gt;이용)</h3>
+<hr>
+<form>
+	<label>
+		<input type="radio" name="china" value="1">
+		짜장면 <img src="C:\pkh\jajang.png">
+	</label><br>
+	<label>
+		<input type="radio" name="china" value="2" checked>
+		짬뽕 <img src="C:\pkh\jjambbong.png">
+	</label><br>
+	<label>
+		<input type="radio" name="china" value="3">
+		탕수육 <img src="C:\pkh\tangsuyuk.png">
+	</label>
+</form>
+
+<h3>Web Programming</h3>
+<hr>
+
+<ul>
+	<li>HTML5</li>
+	<li><strong>CSS</strong></li>
+	<li>JAVASCRIPT</li>
+</ul>
+
+</body>
+</html>
